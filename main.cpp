@@ -12,27 +12,27 @@
 
 using namespace std;
 
-#define BUFLEN 512
+#define BUFLEN 1024
 
-#define DEBUG_MAIN_LOOP
+//#define DEBUG_MAIN_LOOP
 
-#define FIRST_PAIR   //ELEWACJA
+#define FIRST_PAIR   //AZYMUT
 //#define SECOND_PAIR  //ELEWACJA KAMERY
 //#define THIRD_PAIR   //AZYMUT
 //#define FOURTH_PAIR  //AZYMUT KAMERY
 //#define FIFTH_PAIR   //SKO
 //#define SIXTH_PAIR
 
-#define CLIENT_IP "192.168.103.14"
+#define CLIENT_IP "192.168.103.97"
 //#define CLIENT_IP "127.0.0.1"
 
 #ifdef FIRST_PAIR
-#define FIRST_SERIAL_FILE "/dev/ttyUSB0"
+#define FIRST_SERIAL_FILE "/dev/ttyCTI3"
 #define FIRST_SERIAL_BAUDRATE B115200
 #define FIRST_SERIAL_PARITY NO_PARITY
 #define FIRST_SERIAL_STOP_BITS ONE_STOP_BIT
-#define FIRST_LISTEN_PORT 1235
-#define FIRST_SEND_PORT 1234
+#define FIRST_LISTEN_PORT 6234
+#define FIRST_SEND_PORT 6235
 #endif
 
 #ifdef SECOND_PAIR
