@@ -14,7 +14,7 @@ using namespace std;
 
 #define BUFLEN 1024
 
-//#define DEBUG_MAIN_LOOP
+#define DEBUG_MAIN_LOOP
 
 #define FIRST_PAIR   //AZYMUT
 //#define SECOND_PAIR  //ELEWACJA KAMERY
@@ -27,7 +27,8 @@ using namespace std;
 //#define CLIENT_IP "127.0.0.1"
 
 #ifdef FIRST_PAIR
-#define FIRST_SERIAL_FILE "/dev/ttyCTI3"
+//#define FIRST_SERIAL_FILE "/dev/ttyCTI5" //azymut
+#define FIRST_SERIAL_FILE "/dev/ttyCTI4" //elewacja kamer
 #define FIRST_SERIAL_BAUDRATE B115200
 #define FIRST_SERIAL_PARITY NO_PARITY
 #define FIRST_SERIAL_STOP_BITS ONE_STOP_BIT
